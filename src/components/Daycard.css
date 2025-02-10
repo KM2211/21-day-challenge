@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Pacifico&display=swap');
+
+.day-card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.day-card.past {
+  opacity: 0.6;
+}
+
+.day-card.current {
+  border: 2px solid #4C9ECA;
+  transform: scale(1.05);
+}
+
+.day-card.future {
+  opacity: 1;
+}
+
+.day-part {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border-top: 3px solid #E5C34B;
+}
+
+.day-label {
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  color: black;
+  margin: 0;
+}
+
+.description-part {
+  padding: 20px;
+  background-color: #FEEE91;
+  border-top: 3px solid #E5C34B;
+  border-bottom: 3px solid #E5C34B;
+  border-left: 3px solid #E5C34B;
+  border-right: 3px solid #E5C34B;
+  text-align: center;
+  
+  height: 190px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card-description {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.5;
+  height: 100%;
+  overflow: auto;
+  font-family: "Delius", serif;
+  font-weight: bold;
+}
+
+/* Past day card description styling */
+.day-card.past .description-part {
+  background-color: #A8CD89;
+  border-color: #7A9F61;
+}
+
+/* Current day card description styling */
+.day-card.current .description-part {
+  background-color: #E8F9FF;
+  border-color: #C1E4F7;
+}
+
+/* Future day card description styling */
+.day-card.future .description-part {
+  background-color: #FEEE91;
+  border-color: #E5C34B;
+}
+
+/* Adding hover effect */
+.day-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive UI */
+@media (max-width: 768px) {
+  .day-card {
+    width: 100%;
+  }
+
+  .description-part {
+    height: auto; 
+    padding: 15px;
+  }
+
+  .day-label {
+    font-size: 1.5em;
+  }
+}

@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Offside&family=Poiret+One&family=Smooch+Sans:wght@100..900&display=swap');
+
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.additional-header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  margin-bottom: 20px;
+  font-family: "Poiret One", serif;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.additional-header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.app-header {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+  font-family: "Offside", serif;
+}
+
+.app-header h2 {
+  font-size: 1.2rem;
+  color: #666;
+  font-family: "Offside", serif;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* RESPONSIVE UI */
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .additional-header {
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 15px;
+  }
+  
+  .brand-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .app-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .app-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .app-header h2 {
+    font-size: 1rem;
+  }
+
+  .brand-logo {
+    width: 25px;
+    height: 25px;
+  }
+}
