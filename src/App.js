@@ -5,6 +5,8 @@ import challenges from './components/Challenges';
 import brand_logo from './images/brand_logo.png';
 import logo192 from './images/logo192.png'
 
+
+
 const App = () => {
   const startDate = new Date('2025-02-10');
   const [currentDay, setCurrentDay] = useState(1);
